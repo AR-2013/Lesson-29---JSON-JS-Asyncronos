@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Homework
+        </title>
+    </head>
+    <body>
+        <h1 id="answer"> </h1>
+        <script>
+            async function add(a,b) {
+                let response = await a + b;
+                display(response);
+            }
+            function display(some) {
+                document.getElementById("answer").innerHTML = some;
+            }
+            add(2,13);
+        </script>
+    </body>
+</html>
